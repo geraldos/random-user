@@ -47,6 +47,7 @@ module.exports = configure(function (ctx) {
     build: {
       vueRouterMode: "hash", // available values: 'hash', 'history'
       env: config_env.parsed,
+      distDir: ctx.mode.spa ? "public" : null,
       // transpile: false,
       // publicPath: '/',
 
